@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Bhargava A" />
+    <title>Listify</title>
+    <meta name="description" content="Listify - TODO APP"/>
+    <link rel="icon" type="image/png" href="images/mylogo.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="preloader">
+      <img src="images/3-Leg-Preloader.svg" alt="Loading...">
+    </div>
+    <header class="card">
+      <h1>LISTIFY</h1>
+      <button id="theme-switch">
+        <img src="./images/sun.svg" alt="Change color theme" />
+      </button>
+    </header>
+    <main>
+      <h6>The perfect TODO app for you.</h6>
+      <div class="card add">
+        <div class="txt-container">
+          <input type="text" class="txt-input" placeholder="Create a new todo..." spellcheck="false" autocomplete="off" id="addt"/>
+        </div>
+        <div class="ab-container">
+          <button id="add-btn">+</button>
+        </div>
+      </div>
+      <div class="card stat stat-1">
+        <div class="filter">
+          <button id="all" class="on">All</button>
+          <button id="active">Active</button>
+          <button id="completed">Completed</button>
+        </div>
+      </div>
+      <ul class="todos"></ul>
+      <div class="card stat stat-2">
+        <div class="corner">
+          <p><span style="color:var(--clr-blue)" id="items-left">0</span> tasks left</p>
+          <button id="clear-all">Clear all</button>
+          <button id="clear-completed">Clear Completed</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="hide-me">Drag and drop to reorder list</pclass>
+      <h6>&copy; 2021 Bhargava A</h6>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
