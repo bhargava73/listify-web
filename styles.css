@@ -364,6 +364,15 @@ footer h6 {
 	color: var(--clr-gb-2);
 }
 
+footer h6 a {
+	text-decoration: none;
+	color: var(--clr-gb-2);
+}
+
+footer h6 a:hover {
+	color: var(--clr-blue);
+}
+
 .todos.active .card.checked,
 .todos.completed .card {
 	transition: 0.4s;
